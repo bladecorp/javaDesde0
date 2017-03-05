@@ -20,6 +20,7 @@
 		<commons-collections.version>4.1</commons-collections.version>
 		<lowagie.version>2.1.7</lowagie.version>
 		<apache.poi>3.13</apache.poi>
+		<jtatoo.version>1.6.11</jtatoo.version>
 
 	</properties>
 
@@ -89,6 +90,13 @@
 			<artifactId>poi-ooxml-schemas</artifactId>
 			<version>${apache.poi}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>com.jtattoo</groupId>
+			<artifactId>JTattoo</artifactId>
+			<version>${jtatoo.version}</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
