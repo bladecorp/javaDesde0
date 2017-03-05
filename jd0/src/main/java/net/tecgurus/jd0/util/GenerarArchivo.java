@@ -84,7 +84,7 @@ public class GenerarArchivo {
 	        	celdaAmaterno.setCellValue(cliente.getAmaterno().toUpperCase());
 	        	
 	        	XSSFCell celdaEdad = fila.createCell(++numColumna);
-	        	celdaEdad.setCellValue(cliente.getEdad()+" AÑOS");
+	        	celdaEdad.setCellValue(cliente.getEdad()+" AÃ‘OS");
 	        	
 	        	XSSFCell celdaEcivil = fila.createCell(++numColumna);
 	        	celdaEcivil.setCellValue(cliente.geteCivil().getTipo().toUpperCase());

@@ -82,7 +82,7 @@ public class AdminDAO {
 			ps.setString(5, admin.getAmaterno());
 			int exito = ps.executeUpdate();
 			if(exito == 1){
-				System.out.println("SE INSERTÓ CORRECTAMENTE");
+				System.out.println("SE INSERTÃ“ CORRECTAMENTE");
 				return true;
 			}
 			return false;
