@@ -190,7 +190,7 @@ public class PanelCuentas extends JPanel implements ActionListener{
 		popup.addSeparator();
 		popup.add(itemBorrar);
 		
-		cargarGrafica();//se llama a este metodo por unica vez para iniciar la grafica, desppuÈs se invocar· siempre a refrescar grafica
+		cargarGrafica();//se llama a este metodo por unica vez para iniciar la grafica, desppu√©s se invocar√° siempre a refrescar grafica
 	}
 	
 	private void obtenerBancos(){
@@ -271,24 +271,24 @@ public class PanelCuentas extends JPanel implements ActionListener{
 			recargarTabla();
 			refrescarGrafica();
 		}else{
-			JOptionPane.showMessageDialog(this,  "OcurriÛ un error al guardar la cuenta", "Error", JOptionPane.OK_OPTION);
+			JOptionPane.showMessageDialog(this,  "Ocurri√≥ un error al guardar la cuenta", "Error", JOptionPane.OK_OPTION);
 		}
 		
 	}
 	
 	private boolean validarFormulario(){
 		if(cbBanco.getSelectedItem() == null){
-			JOptionPane.showMessageDialog(this,  "Seleccione un banco", "AtenciÛn", JOptionPane.OK_OPTION | JOptionPane.WARNING_MESSAGE);
+			JOptionPane.showMessageDialog(this,  "Seleccione un banco", "Atenci√≥n", JOptionPane.OK_OPTION | JOptionPane.WARNING_MESSAGE);
 			return false;
 		}
 		
 		if(cbCliente.getSelectedItem() == null){
-			JOptionPane.showMessageDialog(this,  "Seleccione un cliente", "AtenciÛn", JOptionPane.OK_OPTION | JOptionPane.WARNING_MESSAGE);
+			JOptionPane.showMessageDialog(this,  "Seleccione un cliente", "Atenci√≥n", JOptionPane.OK_OPTION | JOptionPane.WARNING_MESSAGE);
 			return false;
 		}
 		
 		if(cbTipoCuenta.getSelectedItem() == null){
-			JOptionPane.showMessageDialog(this,  "Seleccione un tipo de cuenta", "AtenciÛn", JOptionPane.OK_OPTION | JOptionPane.WARNING_MESSAGE);
+			JOptionPane.showMessageDialog(this,  "Seleccione un tipo de cuenta", "Atenci√≥n", JOptionPane.OK_OPTION | JOptionPane.WARNING_MESSAGE);
 			return false;
 		}
 		return true;
@@ -348,11 +348,11 @@ public class PanelCuentas extends JPanel implements ActionListener{
 			for (CaracteristicasCuenta carac : caracteristicas) {
 				String mensaje = "";
 				if(carac.getIdCaracteristica() == Constantes.Caracteristicas.SIN_COMISION){
-					mensaje = "* SIN COMISI”N ANUAL *";
+					mensaje = "* SIN COMISI√ìN ANUAL *";
 				}else if(carac.getIdCaracteristica() == Constantes.Caracteristicas.BANCA_LINEA){
-					mensaje = "* ACCESO A BANCA EN LÕNEA *";
+					mensaje = "* ACCESO A BANCA EN L√çNEA *";
 				}else if(carac.getIdCaracteristica() == Constantes.Caracteristicas.DISPOSICION_EFECTIVO){
-					mensaje = "* DISPOSICIONES EN EFECTIVO SIN LÕMITE *";
+					mensaje = "* DISPOSICIONES EN EFECTIVO SIN L√çMITE *";
 				}else if(carac.getIdCaracteristica() == Constantes.Caracteristicas.BENEFICIOS_VIP){
 					mensaje = "* BENEFICIOS EXCLUSIVOS POR SER CLIENTE VIP *";
 				}

@@ -218,8 +218,8 @@ public class PanelAdmin extends JPanel implements ActionListener{
 				limpiarCampos();
 				obtenerAdministradores();
 			}else{
-				JOptionPane.showMessageDialog(this, "No fue posible guardar la informaciÛn. "
-				+ "Posiblemente el nombre de usuario ya estÈ registrado","Error al Guardar", JOptionPane.OK_OPTION | JOptionPane.INFORMATION_MESSAGE);
+				JOptionPane.showMessageDialog(this, "No fue posible guardar la informaci√≥n. "
+				+ "Posiblemente el nombre de usuario ya est√° registrado","Error al Guardar", JOptionPane.OK_OPTION | JOptionPane.INFORMATION_MESSAGE);
 			}
 		}
 	}
@@ -240,7 +240,7 @@ public class PanelAdmin extends JPanel implements ActionListener{
 				limpiarCampos();
 				obtenerAdministradores();
 			}else{
-				JOptionPane.showMessageDialog(this, "No fue posible actualizar la informaciÛn. ","Error al Actualizar", 
+				JOptionPane.showMessageDialog(this, "No fue posible actualizar la informaci√≥n. ","Error al Actualizar", 
 						JOptionPane.OK_OPTION | JOptionPane.ERROR_MESSAGE);
 			}
 		}
@@ -303,7 +303,7 @@ public class PanelAdmin extends JPanel implements ActionListener{
 		tfUsuario.setEditable(true);
 	}
 	
-	public void cargarContenidoInicial(){//METODO QUE SER¡ INVOCADO DESDE EL CARD PANEL
+	public void cargarContenidoInicial(){//METODO QUE SER√Å INVOCADO DESDE EL CARD PANEL
 		limpiarCampos();
 		obtenerAdministradores();
 	}

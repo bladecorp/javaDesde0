@@ -152,7 +152,7 @@ public class PanelBanco extends JPanel implements ActionListener{
 			obtenerBancos();
 			return;
 		}
-		JOptionPane.showMessageDialog(this, "Ocurrió un error al guardar el banco", "Error al Guardar", JOptionPane.OK_OPTION);
+		JOptionPane.showMessageDialog(this, "OcurriÃ³ un error al guardar el banco", "Error al Guardar", JOptionPane.OK_OPTION);
 	}
 
 	@Override
@@ -178,10 +178,10 @@ public class PanelBanco extends JPanel implements ActionListener{
 	private void editarBanco(int id, String nombre){
 		Object respuesta = JOptionPane.showInputDialog(this, "Editar Nombre", "Escriba el nuevo nombre del banco", 
 								JOptionPane.OK_CANCEL_OPTION, null, null, nombre);
-		if(respuesta != null){ // SI ES NULL ES PORQUE EL USUARIO SELECCIONÓ CANCELAR O CERRÓ EL DIALOGO.
+		if(respuesta != null){ // SI ES NULL ES PORQUE EL USUARIO SELECCIONÃ³ CANCELAR O CERRÃ³ EL DIALOGO.
 			String nuevoNombre = respuesta.toString().trim();
 			if(nuevoNombre.isEmpty()){
-				JOptionPane.showMessageDialog(this, "El nombre del banco no puede estar vacío", "Atención",
+				JOptionPane.showMessageDialog(this, "El nombre del banco no puede estar vacÃ­o", "AtenciÃ³n",
 						JOptionPane.OK_OPTION);
 				return;
 			}
@@ -194,7 +194,7 @@ public class PanelBanco extends JPanel implements ActionListener{
 				obtenerBancos();
 				return;
 			}
-			JOptionPane.showMessageDialog(this, "Ocurrió un error al actualizar el banco", "Error al Actualizar",
+			JOptionPane.showMessageDialog(this, "OcurriÃ³ un error al actualizar el banco", "Error al Actualizar",
 					JOptionPane.OK_OPTION);
 		}
 		
@@ -206,7 +206,7 @@ public class PanelBanco extends JPanel implements ActionListener{
 		obtenerBancos();
 	}
 	
-	public void cargarContenidoInicial(){ //METODO QUE SERÁ INVOCADO DESDE EL CARD PANEL
+	public void cargarContenidoInicial(){ //METODO QUE SERÃ¡ INVOCADO DESDE EL CARD PANEL
 		obtenerBancos();
 	}
 	

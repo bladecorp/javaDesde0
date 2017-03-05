@@ -292,25 +292,25 @@ public class PanelMovimiento extends JPanel implements ActionListener{
 		TipoMovimiento tipoMovimiento = (TipoMovimiento)cbTipoMov.getSelectedItem();
 		CuentaDTO cuentaDTO = (CuentaDTO)cbCuenta.getSelectedItem();
 		if(cuentaDTO == null || tipoMovimiento == null){
-			JOptionPane.showMessageDialog(this, "Debe seleccionar una cuenta y un tipo de movimiento", "AtenciÛn", JOptionPane.WARNING_MESSAGE);
+			JOptionPane.showMessageDialog(this, "Debe seleccionar una cuenta y un tipo de movimiento", "Atenci√≥n", JOptionPane.WARNING_MESSAGE);
 			return;
 		}
 		if(tipoMovimiento.getId() == Constantes.TipoMovimiento.TODOS){
-			JOptionPane.showMessageDialog(this, "Tipo de Movimiento inv·lido", "AtenciÛn", JOptionPane.WARNING_MESSAGE);
+			JOptionPane.showMessageDialog(this, "Tipo de Movimiento inv√°lido", "Atenci√≥n", JOptionPane.WARNING_MESSAGE);
 			return;
 		}
 		double monto = 0;
 		double saldoActual = cuentaDTO.getSaldo();
 		if(tipoMovimiento.getId() == Constantes.TipoMovimiento.ABONO || tipoMovimiento.getId() == Constantes.TipoMovimiento.RETIRO){
 			if(tfMonto.getText() == null || tfMonto.getText().isEmpty()){
-				JOptionPane.showMessageDialog(this, "Un monto mayor a cero es requerido", "AtenciÛn", JOptionPane.WARNING_MESSAGE);
+				JOptionPane.showMessageDialog(this, "Un monto mayor a cero es requerido", "Atenci√≥n", JOptionPane.WARNING_MESSAGE);
 				return;
 			}
 			
 			try{
 				monto = Double.parseDouble(tfMonto.getText());
 			}catch(Exception e){
-				JOptionPane.showMessageDialog(this, "Debe ingresar un monto v·lido", "AtenciÛn", JOptionPane.WARNING_MESSAGE);
+				JOptionPane.showMessageDialog(this, "Debe ingresar un monto v√°lido", "Atenci√≥n", JOptionPane.WARNING_MESSAGE);
 				return;
 			}
 			
@@ -318,7 +318,7 @@ public class PanelMovimiento extends JPanel implements ActionListener{
 				saldoActual += monto;
 			}else{
 				if( (saldoActual-monto) < 0){
-					JOptionPane.showMessageDialog(this, "Saldo Insuficiente para realizar la operaciÛn", "AtenciÛn", JOptionPane.WARNING_MESSAGE);
+					JOptionPane.showMessageDialog(this, "Saldo Insuficiente para realizar la operaci√≥n", "Atenci√≥n", JOptionPane.WARNING_MESSAGE);
 					return;
 				}
 				saldoActual -= monto;
@@ -344,7 +344,7 @@ public class PanelMovimiento extends JPanel implements ActionListener{
 			tfMensaje.setText("");
 			JOptionPane.showMessageDialog(this, "Movimiento aplicado correctamente", "Exito", JOptionPane.INFORMATION_MESSAGE);
 		}else{
-			JOptionPane.showMessageDialog(this, "OcurriÛ un error al guardar el movimiento", "Error", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(this, "Ocurri√≥ un error al guardar el movimiento", "Error", JOptionPane.ERROR_MESSAGE);
 			return;
 		}
 	}

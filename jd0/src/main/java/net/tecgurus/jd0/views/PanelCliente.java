@@ -321,7 +321,7 @@ public class PanelCliente extends JPanel implements ActionListener {
 			cargarClientes();
 			limpiarCampos();
 		}else{
-			JOptionPane.showMessageDialog(this, "OcurriÛ un error al actualizar el cliente", "Error", JOptionPane.OK_OPTION);
+			JOptionPane.showMessageDialog(this, "Ocurri√≥ un error al actualizar el cliente", "Error", JOptionPane.OK_OPTION);
 		}
 	}
 	
@@ -367,7 +367,7 @@ public class PanelCliente extends JPanel implements ActionListener {
 			cargarClientes();
 			limpiarCampos();
 		}else{
-			JOptionPane.showMessageDialog(this, "OcurriÛ un error al guardar el cliente", "Error", JOptionPane.OK_OPTION);
+			JOptionPane.showMessageDialog(this, "Ocurri√≥ un error al guardar el cliente", "Error", JOptionPane.OK_OPTION);
 		}
 	}
 		
@@ -395,7 +395,7 @@ public class PanelCliente extends JPanel implements ActionListener {
 		tfAmaterno.setText("");
 	}
 	
-	public void cargarContenidoInicial(){//METODO QUE SER¡ INVOCADO DESDE EL CARD PANEL
+	public void cargarContenidoInicial(){//METODO QUE SER√Å INVOCADO DESDE EL CARD PANEL
 		limpiarCampos();
 		cargarBancos();
 	}
