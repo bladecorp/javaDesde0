@@ -20,7 +20,7 @@ public class MovimientoDAO {
 			boolean hayTipoMovimiento = tipoMovimiento > 0;
 			String tipo =  hayTipoMovimiento ? " AND idTipoMovimiento = ?" : "";
 			String query = "SELECT m.id, m.fecha, m.mensaje, m.monto, m.saldoAnterior, m.saldoActual, tm.id, tm.tipo "
-					+ "FROM movimiento m JOIN tipomovimiento tm ON m.idTipoMovimiento = tm.id WHERE idCuenta = ?"+tipo;
+					+ "FROM movimiento m JOIN tipomovimiento tm ON m.idTipoMovimiento = tm.id WHERE idCuenta = ?"+tipo+" ORDER BY m.fecha DESC";
 			PreparedStatement ps = base.getConexion().prepareStatement(query);
 			ps.setLong(1, idCuenta);
 			if(hayTipoMovimiento){
